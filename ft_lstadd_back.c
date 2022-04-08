@@ -6,13 +6,13 @@
 /*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 17:39:05 by stales            #+#    #+#             */
-/*   Updated: 2022/04/08 23:48:48 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/09 01:26:44 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*ptr;
 

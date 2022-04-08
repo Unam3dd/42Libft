@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 18:52:58 by stales            #+#    #+#             */
-/*   Updated: 2022/04/05 15:36:28 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/08 23:14:38 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
  * @return (void)	Pointer to the allocated memory all set to zero, return NULL
  *					nmemb or size is equal to zero, or on error.
  */
-void	*ft_calloc(t_size nmemb, t_size size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 18:53:53 by stales            #+#    #+#             */
-/*   Updated: 2022/04/04 19:05:24 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/08 22:11:47 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
  *
  * @return (void *)	The ft_memcpy() function returns a pointer to dest.
  */
-void	*ft_memcpy(void *dest, const void *src, t_size n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char	*tdst;
 	unsigned char	*tsrc;

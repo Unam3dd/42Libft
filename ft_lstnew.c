@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 16:14:51 by stales            #+#    #+#             */
-/*   Updated: 2022/04/04 17:39:35 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/08 22:16:22 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ t_list	*ft_lstnew(void *content)
 
 	ptr = (t_list *)malloc(sizeof(t_list));
 	if (!ptr)
-		return (LIBFT_NULL);
+		return (NULL);
 	ptr->content = content;
-	ptr->next = LIBFT_NULL;
+	ptr->next = NULL;
 	return (ptr);
 }

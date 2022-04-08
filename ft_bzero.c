@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 18:52:52 by stales            #+#    #+#             */
-/*   Updated: 2022/04/04 19:04:28 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/08 22:13:44 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
  *
  * @return (void)	None.
  */
-void	ft_bzero(void *s, t_size n)
+void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*tmp;
 

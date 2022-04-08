@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 18:53:30 by stales            #+#    #+#             */
-/*   Updated: 2022/04/04 19:04:13 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/08 22:15:41 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_itoa(int nb)
 	nb_size = ft_nbrlen(nb);
 	nb_str = ft_calloc(1, nb_size + 1);
 	if (!nb_str)
-		return (LIBFT_NULL);
+		return (NULL);
 	nb_long = (long int)nb;
 	if (nb_long < 0)
 	{

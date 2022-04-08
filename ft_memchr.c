@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 18:53:44 by stales            #+#    #+#             */
-/*   Updated: 2022/04/05 11:17:30 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/08 22:15:50 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
  *					byte or NULL if the character does not occur in the given
  *					memory area.
  */
-void	*ft_memchr(const void *s, int c, t_size n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	t_uint8	*tmp;
 
@@ -36,5 +36,5 @@ void	*ft_memchr(const void *s, int c, t_size n)
 		tmp++;
 		n--;
 	}
-	return (LIBFT_NULL);
+	return (NULL);
 }

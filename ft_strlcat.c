@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 00:33:00 by stales            #+#    #+#             */
-/*   Updated: 2022/04/05 12:12:43 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/08 22:10:36 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
  *					string he tried to create. that means the initial length of
  *					dst plus the length of src.
  */
-t_uint32	ft_strlcat(char *dest, const char *src, t_size size)
+t_uint32	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	t_uint32		n;
 	t_uint32		dl;

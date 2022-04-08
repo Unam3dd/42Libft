@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 18:57:26 by stales            #+#    #+#             */
-/*   Updated: 2022/04/05 14:01:24 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/08 22:16:22 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,14 @@
  * @param n			Size to search
  *
  * @return  (char *)If to_find is an empty string, str is returned; if to_find
- *					occurs nowhere in str, LIBFT_NULL is returned; otherwise a
+ *					occurs nowhere in str, NULL is returned; otherwise a
  *					pointer to the first character of the first occurrence of
  *					to_find is returned.
  */
-char	*ft_strnstr(const char *str, const char *to_find, t_size n)
+char	*ft_strnstr(const char *str, const char *to_find, size_t n)
 {
-	t_size	i;
-	t_size	j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	if (!*to_find)
@@ -42,5 +42,5 @@ char	*ft_strnstr(const char *str, const char *to_find, t_size n)
 				return ((char *) str + i);
 		i++;
 	}
-	return (LIBFT_NULL);
+	return (NULL);
 }

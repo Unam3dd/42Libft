@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 18:54:10 by stales            #+#    #+#             */
-/*   Updated: 2022/04/04 18:54:11 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/08 22:16:48 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
  *
  * @return (void *)	The ft_memset() function returns a pointer to dest.
  */
-void	*ft_memset(void *s, int c, t_size n)
+void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*tmp;
 

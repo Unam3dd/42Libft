@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 00:07:10 by stales            #+#    #+#             */
-/*   Updated: 2022/04/05 11:39:16 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/08 22:10:28 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
  *					string he tried to create. that means the length of src.
  */
 
-t_uint32	ft_strlcpy(char *dest, const char *src, t_size size)
+t_uint32	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	char			*tmp;
 	t_uint32		i;

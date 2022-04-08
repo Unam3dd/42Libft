@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 18:57:10 by stales            #+#    #+#             */
-/*   Updated: 2022/04/04 18:57:13 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/08 22:10:09 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
  *
  * @return (char*)	The joined list
  */
-char	*ft_strncat(char *dest, char *src, t_size n)
+char	*ft_strncat(char *dest, char *src, size_t n)
 {
 	char	*tmp;
 

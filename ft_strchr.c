@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 18:55:01 by stales            #+#    #+#             */
-/*   Updated: 2022/04/05 11:24:20 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/08 22:16:22 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,5 @@ char	*ft_strchr(const char *s, int c)
 		tmp++;
 	if (*tmp == (unsigned char)c)
 		return (tmp);
-	return (LIBFT_NULL);
+	return (NULL);
 }

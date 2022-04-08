@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 17:59:23 by stales            #+#    #+#             */
-/*   Updated: 2022/04/04 17:39:26 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/08 22:16:22 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new;
 	t_list	*tmp;
 
-	new = LIBFT_NULL;
+	new = NULL;
 	while (lst)
 	{
 		if (f)
@@ -25,7 +25,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		if (!tmp && del)
 		{
 			ft_lstclear(&tmp, del);
-			return (LIBFT_NULL);
+			return (NULL);
 		}
 		ft_lstadd_back(&new, tmp);
 		lst = lst->next;

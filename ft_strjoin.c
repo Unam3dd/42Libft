@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 18:56:40 by stales            #+#    #+#             */
-/*   Updated: 2022/04/05 18:17:36 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/08 22:16:22 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,15 +23,15 @@
  */
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	t_size	size;
+	size_t	size;
 	char	*ptr;
 
 	if (!s1 || !s2)
-		return (LIBFT_NULL);
+		return (NULL);
 	size = ft_strlen((char *)s1) + ft_strlen((char *)s2) + 1;
 	ptr = ft_calloc(1, size);
 	if (!ptr)
-		return (LIBFT_NULL);
+		return (NULL);
 	ptr[size - 1] = 0;
 	ft_strcpy(ptr, (char *)s1);
 	ft_strcat(ptr, (char *)s2);

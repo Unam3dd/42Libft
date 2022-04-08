@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 18:53:49 by stales            #+#    #+#             */
-/*   Updated: 2022/04/04 18:53:50 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/08 22:11:55 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@
  *
  *					If n is zero, the return value is zero.
  */
-int	ft_memcmp(const void *s1, const void *s2, t_size n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	*ts1;
 	unsigned char	*ts2;

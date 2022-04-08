@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 18:54:00 by stales            #+#    #+#             */
-/*   Updated: 2022/04/04 18:54:06 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/08 22:16:48 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
  *
  * @return (void *)	The ft_memmove() function returns a pointer to dest.
  */
-void	*ft_memmove(void *dest, const void *src, t_size n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	t_uint8	*tdst;
 	t_uint8	*tsrc;

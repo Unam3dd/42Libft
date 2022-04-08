@@ -6,12 +6,13 @@
 /*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 18:52:58 by stales            #+#    #+#             */
-/*   Updated: 2022/04/08 23:14:38 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/09 01:21:02 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+#include <stdint.h>
 
 /**
  * @brief			Allocates memory for an array of nmemb elements of size
@@ -28,6 +29,8 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;
 
+	if ((nmemb == SIZE_MAX || size == SIZE_MAX) && (nmemb > 1 || size > 1))
+		return (NULL);
 	ptr = (void *)malloc(nmemb * size);
 	if (ptr)
 		ft_memset(ptr, 0, nmemb * size);

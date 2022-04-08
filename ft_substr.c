@@ -3,37 +3,37 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: snourry <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/04 18:57:49 by stales            #+#    #+#             */
-/*   Updated: 2022/04/05 15:43:29 by stales           ###   ########.fr       */
+/*   Created: 2022/03/30 17:11:53 by snourry           #+#    #+#             */
+/*   Updated: 2022/04/08 20:30:53 by snourry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-/**
- * @brief			Return a portion of s, begin at start for size of len
- *
- * @param s			String to cut
- * @param start		Start of the cut
- * @param len		Length of the cut
- *
- * @return (char *)	The cutted string
- */
-char	*ft_substr(char const *s, unsigned int start, t_size len)
+static int	ft_size(const char *s, size_t maxlen)
 {
-	char	*str;
-	t_size	i;
+	size_t	i;
 
 	i = 0;
-	if (start < (unsigned int)ft_strlen(s))
-		i = ft_strlen(s) - start;
-	if (i > len)
-		i = len;
-	str = (char *)malloc((sizeof(char) * i + 1));
-	if (str)
-		ft_strlcpy(str, (char *)(s + start), i + 1);
-	return (str);
+	while (s[i] && i < maxlen)
+		i++;
+	return (i);
+}
+
+char	*ft_substr(char const *s, unsigned int start, size_t len)
+{
+	char	*new;
+	size_t	i;
+
+	i = -1;
+	if (start > ft_strlen(s))
+		return (ft_calloc(1, sizeof(char)));
+	new = ft_calloc((ft_size(&s[start], len) + 1), sizeof(char));
+	if (!new)
+		return (0);
+	while (++i, s[start + i] && i < len)
+		new[i] = s[start + i];
+	return (new);
 }

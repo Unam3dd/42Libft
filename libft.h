@@ -6,7 +6,7 @@
 /*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 13:16:35 by stales            #+#    #+#             */
-/*   Updated: 2022/04/09 00:50:50 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/09 20:21:23 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,6 @@ typedef struct s_list
 	void			*content;
 	size_t			size;
 }	t_list;
-
-/////////////////////////////////////
-//
-//	FUNCTION BONUS
-//
-/////////////////////////////////////
 
 t_list			*ft_lstnew(void *content);
 t_list			*ft_lstlast(t_list *lst);
@@ -77,7 +71,6 @@ int				ft_strlen(const char *str);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 int				ft_tolower(int c);
 int				ft_toupper(int c);
-int				ft_strcchr(char *str, char c);
 void			ft_bzero(void *s, size_t n);
 void			ft_putchar_fd(char c, int fd);
 void			ft_putstr_fd(char const *s, int fd);

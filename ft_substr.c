@@ -6,22 +6,12 @@
 /*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 18:57:49 by stales            #+#    #+#             */
-/*   Updated: 2022/04/08 23:20:31 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/09 13:35:35 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
-
-/**
- * @brief			Return a portion of s, begin at start for size of len
- *
- * @param s			String to cut
- * @param start		Start of the cut
- * @param len		Length of the cut
- *
- * @return (char *)	The cutted string
- */
 
 static size_t	ft_getsize(char *s, size_t len)
 {

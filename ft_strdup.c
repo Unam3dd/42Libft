@@ -3,24 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 18:56:52 by stales            #+#    #+#             */
-/*   Updated: 2022/04/04 18:56:54 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/09 20:12:15 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-/**
- * @brief			Returns a pointer to a new string which is a duplicate of
- *					the string s.
- *
- * @param src		String to copy
- *
- * @return (char *)	On success, returns a pointer to the duplicated string.
- */
 char	*ft_strdup(char *src)
 {
 	char	*tmp;

@@ -6,21 +6,12 @@
 /*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 18:57:44 by stales            #+#    #+#             */
-/*   Updated: 2022/04/08 22:15:20 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/09 13:35:30 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/**
- * @brief			Removes all character from set from the beginning and the
- *					end of a string.
- *
- * @param s1		String to trim
- * @param set		Set to remove
- *
- * @return (char *)	The trimed strings
- */
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	s;

@@ -6,24 +6,11 @@
 /*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 00:07:10 by stales            #+#    #+#             */
-/*   Updated: 2022/04/08 22:10:28 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/09 13:34:46 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/**
- * @brief			Copy strings. copies up to size - 1 characters from the
- *					NULL-terminated string src to dst, NUL-terminating the
- *					result.
- *
- * @param dest		String to copy on
- * @param src		String to copy from
- * @param size		Full size of dest
- *
- * @return (t_uint32)The ft_strlcat() function return the total length of the
- *					string he tried to create. that means the length of src.
- */
 
 t_uint32	ft_strlcpy(char *dest, const char *src, size_t size)
 {

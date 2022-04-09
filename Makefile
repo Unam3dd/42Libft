@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: stales <stales@42.fr>                      +#+  +:+       +#+         #
+#    By: stales <stales@student42.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/29 18:23:35 by stales            #+#    #+#              #
-#    Updated: 2022/04/05 19:01:31 by stales           ###   ########.fr        #
+#    Updated: 2022/04/09 20:22:19 by stales           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,7 +64,6 @@ BASE_SRC		:= ft_atoi.c \
 				   ft_putnbr_fd.c \
 				   ft_putstr_fd.c \
 				   ft_split.c \
-				   ft_strcchr.c \
 				   ft_strchr.c \
 				   ft_strdup.c \
 				   ft_striteri.c \

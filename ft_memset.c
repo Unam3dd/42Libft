@@ -6,22 +6,12 @@
 /*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 18:54:10 by stales            #+#    #+#             */
-/*   Updated: 2022/04/08 22:16:48 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/09 20:13:19 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/**
- * @brief			Fills the first n bytes of the memory area pointed to by s
- *					with the constant byte c.
- *
- * @param s			Destination memory area
- * @param c			Char to fill with
- * @param n			First bytes to fill
- *
- * @return (void *)	The ft_memset() function returns a pointer to dest.
- */
 void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*tmp;

@@ -6,21 +6,13 @@
 /*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 18:57:04 by stales            #+#    #+#             */
-/*   Updated: 2022/04/08 22:14:57 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/09 13:35:02 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-/**
- * @brief			Applies function f to string and return it
- *
- * @param s1		String to transform
- * @param f			Function to applies
- *
- * @return (char *)	The allocated string resulting of the function
- */
 char	*ft_strmapi(char const *s1, char (*f)(unsigned int, char))
 {
 	char	*ptr;

@@ -6,19 +6,12 @@
 /*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 18:53:30 by stales            #+#    #+#             */
-/*   Updated: 2022/04/08 22:15:41 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/09 13:33:49 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/**
- * @brief			Constructs a string representation of an integer.
- *
- * @param nb		Integer to convert
- *
- * @return (int)	The converted value or 0 on error
- */
 char	*ft_itoa(int nb)
 {
 	long int	nb_size;

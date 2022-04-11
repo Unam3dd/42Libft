@@ -6,7 +6,7 @@
 /*   By: stales <stales@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 13:16:35 by stales            #+#    #+#             */
-/*   Updated: 2022/04/09 20:21:23 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/11 17:34:28 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ void			*ft_memset(void *s, int c, size_t n);
 char			*ft_strcat(char *dest, char *src);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strcpy(char *dest, char *src);
-char			*ft_strdup(char *src);
+char			*ft_strdup(const char *src);
 char			*ft_strncat(char *dest, char *src, size_t n);
 char			*ft_strndup(char *src, int n);
 char			*ft_strnstr(const char *str, const char *to_find, size_t n);
